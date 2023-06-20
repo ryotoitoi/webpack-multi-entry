@@ -1,6 +1,12 @@
 # HomeShelf
 HomeShelf is a management tool for digital contents. You can add, edit, correct, share and everything you want to do with digital contents.
 
+# run webpack
+move root dir and run below command
+```bash 
+npm start
+```
+
 ## The rules of Branch Naming
 -master |-development |-feature/*
 
