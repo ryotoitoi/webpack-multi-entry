@@ -11,7 +11,7 @@ module.exports = {
   },
   output: {
     filename: '[name].bundle.js',
-    assetModuleFilename: 'assets/[hash][ext][query]',
+    assetModuleFilename: 'assets/[name][ext][query]',
     path: path.resolve(__dirname, 'dist'),
   },
   module: {

@@ -1,6 +1,8 @@
 import * as THREE from 'three';
 import { OrbitControls } from "../node_modules/three/examples/jsm/controls/OrbitControls.js";
 import { makeShelf } from './Components/makeShelf.js';   
+import '../assets/plus.svg';
+import '../assets/thumbtack.svg';
 
 let scene, camera, renderer;
 let shelfWidth;

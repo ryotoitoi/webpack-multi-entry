@@ -1,5 +1,164 @@
-/* style.css */
-body {
-    background-color: #fafafa;
-    font-family: Arial, sans-serif;
-}
+* {
+    margin:0; 
+    padding:0;
+  }
+  
+  body{
+      overflow: hidden;
+  }
+  header {
+    height: 100px;
+    width: 100%;
+    background-color: (255,255,255,255);
+    color: white;
+    position: absolute;
+    max-width: 1110px;
+    margin: 0 auto;
+    right: 0;
+    left: 0;
+  }
+  header .headline{
+      line-height: 100px;
+      float: left;
+      font-size: 30px;
+      /* -webkit-text-stroke: 0.5px black; */
+      margin-left: 100px;
+  }
+  
+  /* .nav-list {
+      line-height: 100px;
+      float: right;
+      margin-right: 10%;
+  
+      list-style: none;
+  }
+  .nav-list-item {
+    list-style: none;
+    display: inline-block;
+  } */
+  
+  .detailView {
+      /* background-color: white; */
+      text-align: left;
+      position:absolute;
+      display: inline;
+      right: 10%;
+      top: 10%;
+      margin: 0;
+      color: white;
+      opacity: 1;
+      background-color: rgba(0, 0, 0, 0.55);
+      border: 1px solid;
+      width: 21%;
+      height: 80%;
+      overflow-y: auto;
+  }
+  .displayNone {
+      display: none;
+  }
+  
+  @media screen and (max-width: 1024px){
+      .detailView {
+          right: 1px;
+          width: 45%;
+          height: auto;
+          bottom: auto;
+          top: 1px;
+          z-index: 100;
+      }
+  }
+  
+  @media screen and (max-width: 600px){
+      .detailView {
+          right: 1px;
+          width: 99%;
+          top: auto;
+          bottom: auto;
+          bottom: 1px;
+          z-index: 100;
+      }
+  }
+  
+  @media screen and (max-width: 1024px) {
+      /* 1024pxまでの幅の場合に適応される */
+      .sidebar {
+          right: 10;
+      }
+  }
+  
+  .sideid {
+      margin-left: 8%;
+      margin-right: 8%;
+      margin-top: 5%;
+      display: flexbox;
+      height: auto;
+  }
+  
+  #sidebutton{
+      text-align: right;
+      margin-right: 10%;
+      margin-top: 5%;
+      margin-bottom: 10%;
+  }
+  
+  .persOn{
+      text-align: right;
+      width: 100px;
+      height: 30px;
+      /* margin-right: 10%;
+      margin-top: 30%;
+      margin-bottom: 10%; */
+  }
+  
+  h2 { 
+      margin-top: 10%;
+      margin-bottom: 8%;
+      margin-left: 8%;
+  }
+  
+  input {
+      padding-right: 5px;
+  }
+  
+  /* canvas {
+      width: 50%;
+      height: 90%;
+  } */
+  
+  .icon {
+      position: fixed;
+      /* width: 74px;
+      height: 74px; */
+      /* bottom: 36px; */
+      right: 26px;
+      padding: 12px;
+      border-radius: 50%;
+      margin-bottom: 0px;
+      background-color: black;
+      opacity: 2;
+      z-index: 9;
+      /* color: black; */
+  }
+  
+  .icon img{
+      filter: invert(100%) sepia(96%) saturate(17%) hue-rotate(268deg) brightness(103%) contrast(105%);
+      display: block;
+      /* opacity: 0; */
+  }
+  
+  #register{
+      bottom: 36px;
+  }
+  
+  #rotate {
+      bottom: 100px;
+  }
+  
+  iframe {
+      width: auto;
+      height: auto;
+      margin-left: 8%;
+      /* margin-right: 8%; */
+      margin-top: 5%;
+      display: flexbox;
+  }
